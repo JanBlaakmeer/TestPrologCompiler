@@ -6,3 +6,13 @@
 //
 
 import Foundation
+
+enum Token: Equatable {
+    case identifier(String)  // Voor identifiers zoals `father`, `john`
+    case openParen           // Voor '('
+    case closeParen          // Voor ')'
+    case comma               // Voor ','
+    case period              // Voor '.'
+    case semicolon           // Voor ';' (gebruik voor OR)
+    case endOfFile           // Einde van de invoer
+}

@@ -11,6 +11,13 @@
 		4900FB722C903FC900C20E4A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4900FB712C903FC900C20E4A /* ContentView.swift */; };
 		4900FB742C903FCA00C20E4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4900FB732C903FCA00C20E4A /* Assets.xcassets */; };
 		4900FB772C903FCA00C20E4A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4900FB762C903FCA00C20E4A /* Preview Assets.xcassets */; };
+		49E90CD32C919C0E008D88CC /* token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E90CD22C919C0E008D88CC /* token.swift */; };
+		49E90CD52C919C2D008D88CC /* lexer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E90CD42C919C2D008D88CC /* lexer.swift */; };
+		49E90CD72C919C43008D88CC /* term.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E90CD62C919C43008D88CC /* term.swift */; };
+		49E90CD92C919C66008D88CC /* ASTNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E90CD82C919C66008D88CC /* ASTNode.swift */; };
+		49E90CDB2C919CDF008D88CC /* parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E90CDA2C919CDF008D88CC /* parser.swift */; };
+		49E90CDD2C919CFF008D88CC /* unifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E90CDC2C919CFF008D88CC /* unifier.swift */; };
+		49E90CDF2C919D1A008D88CC /* interpreter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E90CDE2C919D1A008D88CC /* interpreter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +27,13 @@
 		4900FB732C903FCA00C20E4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4900FB762C903FCA00C20E4A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4900FB782C903FCA00C20E4A /* TestPrologCompiler.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TestPrologCompiler.entitlements; sourceTree = "<group>"; };
+		49E90CD22C919C0E008D88CC /* token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = token.swift; sourceTree = "<group>"; };
+		49E90CD42C919C2D008D88CC /* lexer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lexer.swift; sourceTree = "<group>"; };
+		49E90CD62C919C43008D88CC /* term.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = term.swift; sourceTree = "<group>"; };
+		49E90CD82C919C66008D88CC /* ASTNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASTNode.swift; sourceTree = "<group>"; };
+		49E90CDA2C919CDF008D88CC /* parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = parser.swift; sourceTree = "<group>"; };
+		49E90CDC2C919CFF008D88CC /* unifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = unifier.swift; sourceTree = "<group>"; };
+		49E90CDE2C919D1A008D88CC /* interpreter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = interpreter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +68,13 @@
 			children = (
 				4900FB6F2C903FC900C20E4A /* TestPrologCompilerApp.swift */,
 				4900FB712C903FC900C20E4A /* ContentView.swift */,
+				49E90CD82C919C66008D88CC /* ASTNode.swift */,
+				49E90CD22C919C0E008D88CC /* token.swift */,
+				49E90CD42C919C2D008D88CC /* lexer.swift */,
+				49E90CD62C919C43008D88CC /* term.swift */,
+				49E90CDA2C919CDF008D88CC /* parser.swift */,
+				49E90CDC2C919CFF008D88CC /* unifier.swift */,
+				49E90CDE2C919D1A008D88CC /* interpreter.swift */,
 				4900FB732C903FCA00C20E4A /* Assets.xcassets */,
 				4900FB782C903FCA00C20E4A /* TestPrologCompiler.entitlements */,
 				4900FB752C903FCA00C20E4A /* Preview Content */,
@@ -139,7 +160,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49E90CDB2C919CDF008D88CC /* parser.swift in Sources */,
+				49E90CD92C919C66008D88CC /* ASTNode.swift in Sources */,
+				49E90CDD2C919CFF008D88CC /* unifier.swift in Sources */,
+				49E90CD32C919C0E008D88CC /* token.swift in Sources */,
 				4900FB722C903FC900C20E4A /* ContentView.swift in Sources */,
+				49E90CD52C919C2D008D88CC /* lexer.swift in Sources */,
+				49E90CD72C919C43008D88CC /* term.swift in Sources */,
+				49E90CDF2C919D1A008D88CC /* interpreter.swift in Sources */,
 				4900FB702C903FC900C20E4A /* TestPrologCompilerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +315,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "nl.blaakmeer.llm-ai2.TestPrologCompiler";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
